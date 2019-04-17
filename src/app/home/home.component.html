@@ -1,0 +1,45 @@
+<div class="logo">
+  <a href="https://nautdrafter.bitbucket.org"><div class="A">A</div><div class="rest">rtifeX</div></a>
+</div>
+
+<img class="topPic" src="../../assets/assets/wallpaper/90a3cb17e0d2b54e31e7e94a843d9c3d.png">
+<img class="topPic2" src="../../assets/assets/wallpaper/90a3cb17e0d2b54e31e7e94a843d9c3d.png">
+
+<!--card holders-->
+
+<div class="holder">
+
+
+  <div class="image-holder">
+      <div class="row">
+
+          <div class="card pane1" [style.background-image]='img1' [ngClass]="{'slideDown':open  } ">
+              <img src="./assets/assets/wallpaper/png-glare-8.png">
+          </div>
+         
+          <div class="card pane2" [style.background-image]='img3' [ngClass]="{'slideDown':open  } ">
+            <img src="./assets/assets/wallpaper/png-glare-8.png">
+          </div>
+          <div class="card pane3" [style.background-image]='img2' [ngClass]="{'slideDown':open  } ">
+            <img src="./assets/assets/wallpaper/png-glare-8.png">
+          </div>
+          <div class="card pane4" [style.background-image]='img4' [ngClass]="{'slideDown':open  } ">
+            <img src="./assets/assets/wallpaper/png-glare-8.png">
+          </div>
+          <div class="card pane5" [style.background-image]='img5' [ngClass]="{'slideDown':open  } ">
+            <img src="./assets/assets/wallpaper/png-glare-8.png">
+          </div>
+          <div class="card pane6" [style.background-image]='img6' [ngClass]="{'slideDown':open  } ">
+            <img src="./assets/assets/wallpaper/png-glare-8.png">
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+<!-- the two buttons-->
+
+
+  
+<button type="submit" class="btn btn-success join" name="set" (click)="move()">Join me</button>
+<a routerLink='/auth/login'><button type="submit" name="login" class="btn btn-warning login" >Let's go</button></a>

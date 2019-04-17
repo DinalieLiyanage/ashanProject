@@ -1,0 +1,347 @@
+.logo{
+    z-index: 4000;
+    position: absolute;
+}
+
+//@import "bourbon";
+
+$col-secondary: #edc405;
+
+body {
+	background-color: #02111b;
+}
+.A{
+    position: absolute;
+    float: left;
+    font-size: 260px;
+}
+
+.rest{
+    margin-left: 160px;
+    position: absolute;
+    float: left;
+    top: 50px;
+    
+}
+.logo {
+    //margin: 50px auto;
+    margin-top: 10px;
+    margin-left: 30px;
+	text-align: center;
+
+	a {
+    text-decoration: none;
+   //@include transform(perspective(2.5em) rotateX(15deg) scaleY(0.8));
+  // @include transition(all 0.5s);
+
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 105px;
+    font-weight: 700;
+    font-family: 'Exo 2';
+    line-height: 0.8;
+
+    color: lighten($col-secondary, 10%);
+
+    text-shadow: 0 -1px 15px rgba(0,0,0,0.9),
+			      0 1px 0 adjust-hue(darken($col-secondary, 22%), -3deg),
+				   0 3px 0 adjust-hue(darken($col-secondary, 21%), -3deg),
+				   0 5px 0 adjust-hue(darken($col-secondary, 20%), -3deg),
+				   0 7px 0 adjust-hue(darken($col-secondary, 19%), -3deg),
+				   0 9px 0 adjust-hue(darken($col-secondary, 18%), -3deg),
+					0 6px 50px transparentize(lighten($col-secondary, 20%), 0.2);
+
+    &:first-line {
+      font-size: 0.8em;
+    }
+
+    &:hover {
+     // @include transform(perspective(8em) rotateX(11deg) scale(1.2));
+
+      text-shadow: 0 -1px 15px black,
+			        0 1px 0 adjust-hue(darken($col-secondary, 22%), -3deg),
+				     0 2px 0 adjust-hue(darken($col-secondary, 21%), -3deg),
+				     0 0px 0 adjust-hue(darken($col-secondary, 20%), -3deg),
+				     0 1px 0 adjust-hue(darken($col-secondary, 19%), -3deg),
+				     0 2px 0 adjust-hue(darken($col-secondary, 18%), -3deg),
+					  0 2px 30px transparentize(lighten($col-secondary, 20%), 0.4);
+		}
+	}
+}
+.join {
+  margin: 50px;
+  padding: 10px;
+  width: 240px;
+  font-size: 60px;
+  color: black;
+  margin-left: 440px;
+  margin-top: 200px;
+  position: absolute;
+  border: none;
+  border-radius: 50px;
+  z-index: 2000;
+}
+
+.login {
+  margin: 50px;
+  padding: 10px;
+  width: 400px;
+  font-size: 60px;
+  color: black;
+  margin-top: 200px;
+  margin-left: 740px;
+  position: absolute;
+  z-index: 2000;
+}
+
+.btn {
+  border-radius: 35px;
+}
+
+.holder {
+  width: 100%;
+  position: absolute;
+  /* background-color: black; */
+  height: 100vh;
+}
+
+.image-holder {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image-holder .card {
+  border-radius: 25px;
+  width: calc(100vw / 6);
+  height: 100vh;
+  object-fit: cover;
+  overflow-x: hidden;
+
+}
+
+.image-holder .card:nth-child(1) {
+
+  background-image: url(../../assets/assets/wallpaper/cards/png/1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  border-color: white;
+  background-origin: border-box;
+  animation: slide 5s infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+.image-holder .card:nth-child(2) {
+  background-image: url(../../assets/assets/wallpaper/cards/png/4.png);
+  animation: slide2 5s infinite;
+  object-fit: cover;
+  border-color: white;
+  background-origin: border-box;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+
+}
+
+.image-holder .card:nth-child(3) {
+    background-image: url(../../assets/assets/wallpaper/cards/png/15.png);
+    animation: slide3 5s infinite;
+    object-fit: cover;
+    border-color: white;
+    background-origin: border-box;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+  
+  }
+  .image-holder .card:nth-child(4) {
+    background-image: url(../../assets/assets/wallpaper/cards/png/23.png);
+    animation: slide4 5s infinite;
+    object-fit: cover;
+    border-color: white;
+    background-origin: border-box;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+  
+  }
+
+  .image-holder .card:nth-child(5) {
+    background-image: url(../../assets/assets/wallpaper/cards/png/20.png);
+    animation: slide5 4s infinite;
+    object-fit: cover;
+    border-color: white;
+    background-origin: border-box;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+  
+  }
+
+  .image-holder .card:nth-child(6) {
+    background-image: url(../../assets/assets/wallpaper/cards/png/10.png);
+    animation: slide6 5s infinite;
+    object-fit: cover;
+    border-color: white;
+    background-origin: border-box;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+  
+  }
+
+@keyframes slide {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+ 
+}
+
+@keyframes slide2 {
+  from {
+    background-position: 100%;
+  }
+
+  to {
+    background-position: 0%;
+  }
+ 
+
+}
+
+@keyframes slide3 {
+    from {
+        background-position: 100%;
+      }
+    
+      to {
+        background-position: 0%;
+      }
+     
+  
+  }
+
+  @keyframes slide4 {
+    from {
+        background-position: 0%;
+      }
+    
+      to {
+        background-position: 100%;
+      }
+  }
+  @keyframes slide5 {
+    from {
+        background-position: 0%;
+      }
+    
+      to {
+        background-position: 100%;
+      }
+  }
+  @keyframes slide6 {
+    from {
+        background-position: 20%;
+      }
+    
+      to {
+        background-position: 100%;
+      }
+  }
+
+.slideUp {
+  -webkit-transform: translateY(-300%);
+  -moz-transform: translateY(-300%);
+  -o-transform: translateY(-300%);
+  -ms-transform: translateY(-300%);
+  transform: translateY(-300%);
+}
+
+.slideDown {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -o-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
+}
+
+.pane1 {
+  transition: all 3s;
+  -webkit-transition: all 3s;
+  /* Safari 3.1 to 6.0 */
+  background-color: black;
+}
+
+.pane2 {
+    transition: all 2.4s;
+    -webkit-transition: all 1.1s;
+    background-color: rgb(0, 0, 0);
+}
+
+.pane3 {
+    transition: all 2.4s;
+    -webkit-transition:  1.1s;
+    background-color: rgb(0, 0, 0);
+}
+
+.pane4 {
+    transition: all 2.4s;
+    -webkit-transition: all 2.1s;
+    background-color: rgb(0, 0, 0);
+}
+
+.pane5 {
+    transition: all 2.4s;
+    -webkit-transition: all 1.7s;
+    background-color: rgb(0, 0, 0);
+}
+
+.topPic{
+    background-size: cover;
+    position: absolute;
+    z-index: 1000;
+    width: 675px;
+    height: 100%;
+    //opacity: 0.8;
+    float: left;
+}
+
+.topPic2{
+    background-size: cover;
+    position: absolute;
+    z-index: 1000;
+    width: 675px;
+    height: 100%;
+    //opacity: 0.8;
+    float: left;
+    margin-left: 672px;
+    opacity: 0.6;
+}
+
+

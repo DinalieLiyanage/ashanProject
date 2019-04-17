@@ -1,0 +1,52 @@
+<!--<div class="up">
+  <img src="image.jpg" alt="Image" />
+  
+<input #file type="file" accept='image/*' (change)="preview(file.files)" />
+<img [src]="imgURL" height="200" *ngIf="imgURL">
+
+
+</div>
+<div class="getImg">
+<input type="file" (change)="fileChangeEvent($event)" />
+</div>
+
+
+
+
+<ngx-image-viewer class="getImg1"  [src]="imageChangedEvent" [(index)]="imageIndex"></ngx-image-viewer>
+
+<img [src]="croppedImage" />
+-->
+
+
+<!--
+<input type="file" (change)="onImageChange($event)" accept="image/*">
+-->
+
+
+<input type="file" (change)="fileChangeEvent($event)" />
+
+<image-cropper
+    [imageChangedEvent]="imageChangedEvent"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="4 / 3"
+    [resizeToWidth]="50"
+    format="png"
+    (imageCropped)="imageCropped($event)"
+    (imageLoaded)="imageLoaded()"
+    (cropperReady)="cropperReady()"
+    (loadImageFailed)="loadImageFailed()"
+></image-cropper>
+
+<img [src]="croppedImage" />
+
+
+
+
+
+
+
+
+
+
+

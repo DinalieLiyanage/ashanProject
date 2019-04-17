@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(../src/assets/bootswatch/_bootswatch.scss);
+@import url(../src/assets/bootswatch/_variables.scss);
+@import url(../src/assets/bootswatch/bootstrap.min.css);
+
+*{
+    box-sizing:border-box;
+
+}
+
+body , html   {
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
